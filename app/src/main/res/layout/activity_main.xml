@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/userDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userMailLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userMailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userMailLabel"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/userImgUrlLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link_Imagen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userDescriptionLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userDescriptionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userDescriptionLabel"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/userNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/inputMail"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="@+id/userMailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userMailLabel" />
+
+    <EditText
+        android:id="@+id/inputDescripcion"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="@+id/userDescriptionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userDescriptionLabel" />
+
+    <EditText
+        android:id="@+id/inputLinkImg"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="@+id/userImgUrlLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userImgUrlLabel" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="@+id/userNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
+
+    <TextView
+        android:id="@+id/userMailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Mail:"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/userNameLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
+
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/green2"
+        android:text="SAVE"
+        app:layout_constraintStart_toStartOf="@+id/userImgUrlLabel"
+        app:layout_constraintTop_toBottomOf="@+id/userImgUrlLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
