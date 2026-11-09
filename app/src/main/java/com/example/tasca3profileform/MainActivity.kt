@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             val name = inputName.text.toString().trim()
             val mail = inputMail.text.toString().trim()
             val description = inputDescription.text.toString().trim()
-            val imageUrl = inputLinkImg.text.toString().trim()
+            val imageUrl = inputLinkImg.text.toString()
 
             val intent = Intent(this, ProfileActivity::class.java).apply {
                 putExtra(CONSTANT_NAME, name)

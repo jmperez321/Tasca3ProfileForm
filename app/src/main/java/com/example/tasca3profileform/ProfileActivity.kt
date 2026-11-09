@@ -14,7 +14,7 @@ class ProfileActivity : AppCompatActivity() {
     lateinit var tvName: TextView
     lateinit var tvMail: TextView
     lateinit var tvDes: TextView
-    lateinit var tvImg: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,7 +28,7 @@ class ProfileActivity : AppCompatActivity() {
         tvName = findViewById(R.id.userNameView)
         tvMail = findViewById(R.id.userMailView)
         tvDes = findViewById(R.id.userDescriptionView)
-        tvImg = findViewById(R.id.imageContact)
+        val tvImg = findViewById<ImageView>(R.id.imageContact)
 
         val name = intent.getStringExtra(CONSTANT_NAME) ?: ""
         val mail = intent.getStringExtra(CONSTANT_MAIL) ?: ""
@@ -40,8 +40,16 @@ class ProfileActivity : AppCompatActivity() {
         tvDes.text = description
 
         // mostrar imagen
-        Glide.with(this)
+        /*Glide.with(this)
             .load(imageUrl)
-            .into(tvImg)
+            .into(tvImg)*/
+
+        if (imageUrl.isNotEmpty()) {
+            Glide.with(this)
+                .load(imageUrl)
+                .placeholder(android.R.drawable.stat_sys_download) // Muestra mientras carga
+                .error(android.R.drawable.stat_notify_error)      // Muestra si la URL falla
+                .into(tvImg)
+        }
     }
 }
