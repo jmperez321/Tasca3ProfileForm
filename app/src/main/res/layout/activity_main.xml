@@ -25,14 +25,14 @@
         android:id="@+id/userImgUrlLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Link_Imagen"
+        android:text="Foto"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/userDescriptionLabel"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/userDescriptionLabel"
         app:layout_constraintTop_toBottomOf="@+id/userDescriptionLabel"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
         android:id="@+id/userNameLabel"
@@ -50,40 +50,44 @@
     <EditText
         android:id="@+id/inputMail"
         android:layout_width="177dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_rounded_field"
         android:ems="10"
-        android:inputType="text"
-        android:text=" "
+        android:hint="Escribe tu Mail"
         app:layout_constraintStart_toStartOf="@+id/userMailLabel"
         app:layout_constraintTop_toBottomOf="@+id/userMailLabel" />
 
+
     <EditText
         android:id="@+id/inputDescripcion"
-        android:layout_width="177dp"
-        android:layout_height="45dp"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_rounded_field"
         android:ems="10"
-        android:inputType="text"
-        android:text=" "
+        android:hint="Escribe tu descripción"
         app:layout_constraintStart_toStartOf="@+id/userDescriptionLabel"
         app:layout_constraintTop_toBottomOf="@+id/userDescriptionLabel" />
 
     <EditText
         android:id="@+id/inputLinkImg"
-        android:layout_width="177dp"
-        android:layout_height="45dp"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_rounded_field"
         android:ems="10"
+        android:hint="URL de tu imagen"
         android:inputType="text"
-        android:text=" "
         app:layout_constraintStart_toStartOf="@+id/userImgUrlLabel"
         app:layout_constraintTop_toBottomOf="@+id/userImgUrlLabel" />
 
     <EditText
         android:id="@+id/inputName"
         android:layout_width="177dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_rounded_field"
         android:ems="10"
+        android:hint="Escribe tu nombre"
         android:inputType="text"
-        android:text=" "
         app:layout_constraintStart_toStartOf="@+id/userNameLabel"
         app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
 
